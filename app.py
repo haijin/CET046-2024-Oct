@@ -11,7 +11,7 @@ def index():
 def prediciton_DBS():
     #return(render_template("prediciton_DBS.html"))
     q = float(request.form.get("q"))
-    return(render_template("prediciton_DBS.html" ,r=(coef*q)+90.2))
+    return(render_template("prediciton_DBS.html" ,r=(-50.6*q)+90.2))
 
 if __name__ == "__main__":
     app.run()
